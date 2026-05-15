@@ -2,13 +2,6 @@
 # CFITSIO CMakeLists.txt
 #==============================================================================
 
-# Ensure that build directory is not the source directory:
-IF(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
-	message(FATAL_ERROR
-		"Please create a separate directory for building CFITSIO."
-		)
-ENDIF()
-
 CMAKE_MINIMUM_REQUIRED(VERSION 3.15)
 
 # Suppress warning about WIN32 no longer being defined on Cygwin:
